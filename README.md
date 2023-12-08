@@ -45,3 +45,38 @@ Worst Case
 - min=4 -> swap 5 and 4 -> [2, 3, 4, | 8, 7, 9, 5, 15, 6]
 - min=5 -> swap 8 and 5 -> [2, 3, 4, 5, | 7, 9, 8, 15, 6]
 ```
+
+
+## MERGE SORT PROJECT
+
+ 
+
+<br>
+
+ 
+
+1-) <strong>[16,21,11,8,12,22]</strong> Merge Sort
+    Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+    
+```
+- [16, 21, 11] -- [8, 12, 22]
+- [16, 21]  [11] -- [8, 12] [22]
+- [16] [21] [11] -- [8] [12] [22]
+- [16, 21]  [11] -- [8, 12] [22]
+- [11, 16, 21] -- [8, 12, 22]
+- [8, 11,12, 16, 21, 22]
+```
+
+2-) <strong>[16,21,11,8,12,22]</strong> Merge Sort
+    Big-O gösterimini yazınız.
+    
+```
+Step 1 -> n
+Step 2 -> n/2
+Step 3 -> n/4
+....
+Step (n-1) -> (n-1)/2^(n-2)
+
+sum = n + n/2 + ... = n(1 + 1/2 + ...) = nlogn
+O(nlogn)
+```
